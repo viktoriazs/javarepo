@@ -4,9 +4,11 @@ public class JavaGit {
 
     public static void main(String[] args) {
         /*ha hideg van akkor viszek kabatot egyebkent nem viszek kabatot*/
+        final int HIDEG_HATAR = 10;
         int homerseklet = 11;
-        boolean hideg = homerseklet < 10;
-        String kabat = hideg ? "viszek kabatot" : "nem viszek kabatot";
+        String eredmeny = "viszek kabatot";
+        boolean hideg = homerseklet < HIDEG_HATAR;
+        String kabat = hideg ? eredmeny : "nem" + eredmeny;
         System.out.println(kabat);
     }
     
